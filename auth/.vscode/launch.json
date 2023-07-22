@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\app.js",
+            "env": {
+                "PORT": "37001",
+                "LOG_LEVEL": "info",
+                "LOG_PATH": "${workspaceFolder}\\logs\\",
+
+                "DATABASE_URL": "postgres://postgres:1234@localhost:5432/linxchat",
+                "REDIS_URL": "redis://localhost:6379/2",
+                "REDIS_HOST": "localhost",
+                "REDIS_PORT": "6379",
+                "REDIS_DB": "2",
+            }
+        }
+    ]
+}

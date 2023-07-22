@@ -1,0 +1,12 @@
+let RespCode = {}
+
+RespCode.OK = 1
+RespCode.INVALID_FIELD = 370001
+RespCode.ERROR_API = 370002
+RespCode.ERROR_SERVER = 370003
+RespCode.ERROR_UNKNOWN = 370004
+RespCode.ERROR_POSTGRESQL = 370005
+RespCode.ERROR_USER_NOT_FOUND = 370006
+RespCode.ERROR_ACCESS = 370007
+
+module["exports"] = RespCode;
